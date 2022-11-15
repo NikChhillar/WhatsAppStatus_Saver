@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        >
+
+        <FrameLayout
+            android:layout_width="160dp"
+            android:layout_height="250dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ivStatus"
+                android:backgroundTint="#e4e4e4"
+                android:scaleType="centerCrop"
+                android:src="@color/teal_700"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:cardCornerRadius="40dp"
+                app:cardBackgroundColor="#1c1c1c"
+                android:layout_gravity="top|right"
+                android:layout_margin="10dp"
+                android:id="@+id/cvVideoIcon">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:padding="5dp"
+                    android:id="@+id/ivVideoIcon"
+                    android:layout_gravity="center"
+                    android:visibility="visible"
+                    app:tint="@color/white"
+                    android:src="@drawable/vicon"
+                    android:layout_height="30dp"/>
+
+
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
